@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StackSprint.dev – 12-Week Bootcamp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font: 'Inter', sans-serif;
+      --color-header-bg: #FFF7E6;
+      --color-accent-green: #C3E0DC;
+      --color-accent-peach: #FAD4C0;
+      --color-accent-yellow: #FCF3CF;
+      --color-accent-blue: #D4E4F7;
+      --color-accent-lilac: #E9D7F7;
+      --color-accent-mint: #D4F4E9;
+      --color-text: #333333;
+      --color-button-bg: #F5A623;
+      --color-button-text: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: var(--font); color: var(--color-text); line-height:1.6; background:#fafafa; scroll-behavior: smooth; }
+    header { background: var(--color-header-bg); padding: 3rem 1rem; text-align: center; }
+    header h1 { font-size: 2.75rem; margin-bottom: .5rem; color:#222; }
+    header p.subtitle { font-size:1.25rem; font-weight:500; margin-bottom:1rem; }
+    header p.tagline { font-size:1rem; max-width:620px; margin:0 auto 1.5rem; color:#555; }
+    header a.btn { display: inline-block; background: var(--color-button-bg); color: var(--color-button-text); padding: 0.75rem 1.25rem; border-radius: 4px; font-size: 1rem; text-decoration: none; transition: background .2s; }
+    header a.btn:hover { background: #d98f1f; }
+
+    .container { width:90%; max-width:1100px; margin:3rem auto; }
+
+    .features { display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-bottom:3rem; }
+    .feature-box { padding:1.5rem; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,.08); height:auto; }
+    .feature-box h3 { font-size:1.2rem; font-weight:600; margin-bottom:.5rem; }
+    .feature-box p, .feature-box ul { font-size:.95rem; color:#444; }
+    .feature-box ul { list-style:disc inside; margin-top:.4rem; }
+    .accent-1{background:var(--color-accent-green);}  
+    .accent-2{background:var(--color-accent-peach);}  
+    .accent-3{background:var(--color-accent-yellow);} 
+    .accent-4{background:var(--color-accent-blue);}   
+    .accent-5{background:var(--color-accent-lilac);}  
+    .accent-6{background:var(--color-accent-mint);}   
+
+    .register { background:#fff; padding:2.5rem; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,.1); }
+    .register h2 { font-size:1.7rem; margin-bottom:1rem; }
+    .register form { display:grid; gap:1rem; }
+    .register input, .register select, .register textarea { padding:.8rem; border:1px solid #ccc; border-radius:4px; font-size:1rem; width:100%; }
+    .register button { background:var(--color-button-bg); color:var(--color-button-text); padding:.9rem; border:none; border-radius:4px; font-size:1.05rem; cursor:pointer; transition:background .2s; }
+    .register button:hover{ background:#d98f1f; }
+
+    footer{ text-align:center; margin:2rem 0; font-size:.85rem; color:#777; }
+    footer a{ color:inherit; text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div class="announcement" style="background:#F5A623;color:#fff;text-align:center;padding:0.5rem;">
+    🔥 Fullstack Bootcamp (Angular | .NET | SQL) starts <strong>August 16, 2025</strong> – <a href="#register" style="color:#222;font-weight:600;text-decoration:underline;">Reserve your seat now!</a>
+  </div>
+
+  <header>
+    <h1>StackSprint.dev</h1>
+    <p class="subtitle">12-Week Live Bootcamp to Launch Your Tech Career</p>
+    <p class="tagline">Code with experts, build production-grade projects, master AI-assisted workflows, and walk into interviews with confidence.</p>
+    <!-- Hero Reserve Button -->
+    <a href="#register" class="btn">Reserve Your Seat</a>
+  </header>
+
+  <main class="container">
+    <section class="features">
+      <div class="feature-box accent-1">
+        <h3>Live Mentor Sessions</h3>
+        <p>Real-time classes led by senior engineers who’ve shipped large-scale products. Ask questions, watch live coding, and get practical guidance every step.</p>
+      </div>
+      <div class="feature-box accent-2">
+        <h3>Production Projects</h3>
+        <p>Build complete features with Git, Docker, CI/CD, and cloud deploys. Each sprint ends with a demo and a polished GitHub repo for recruiters.</p>
+      </div>
+      <div class="feature-box accent-3">
+        <h3>Full-Spectrum Curriculum</h3>
+        <ul>
+          <li>Modern Web, DevOps & Cloud</li>
+          <li>Data Dashboards & Agile PM</li>
+          <li>AI-assisted coding baked in</li>
+        </ul>
+      </div>
+      <div class="feature-box accent-4">
+        <h3>AI Productivity Boost</h3>
+        <p>Harness GitHub Copilot, ChatGPT, and code-gen workflows to prototype faster, refactor smarter, and eliminate repetitive tasks.</p>
+      </div>
+      <div class="feature-box accent-5">
+        <h3>Career Accelerator</h3>
+        <p>Resume makeovers, mock whiteboards, behavioral drills, salary-negotiation tips, plus direct intros to hiring partners.</p>
+      </div>
+      <div class="feature-box accent-6">
+        <h3>Global Learner Community</h3>
+        <p>Slack workspace, weekly hack nights, lifetime recordings, and an active alumni referral network to keep your momentum high.</p>
+      </div>
+    </section>
+
+    <!-- Registration Form with ID -->
+    <section id="register" class="register">
+      <h2>Reserve Your Seat</h2>
+      <form name="stacksprint" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="stacksprint" />
+        <p style="display:none;"><label>“Don’t fill this out if you’re human”: <input name="bot-field" /></label></p>
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <select name="interest" required>
+          <option value="" disabled selected>Select your focus area</option>
+          <option value="fullstack">Fullstack Development</option>
+          <option value="frontend">Frontend Development</option>
+          <option value="backend">Backend Development</option>
+          <option value="devops">DevOps & CI/CD</option>
+          <option value="datascience">Data Science & Analytics</option>
+          <option value="machine-learning">Machine Learning & AI</option>
+          <option value="cloud">Cloud Engineering</option>
+          <option value="product-management">Product Management</option>
+          <option value="ux-ui">UX / UI Design</option>
+          <option value="qa">Quality Engineering & Testing</option>
+          <option value="custom">Custom Learning Plan</option>
+        </select>
+        <textarea name="comments" rows="3" placeholder="Tell us about your goals or questions..."></textarea>
+        <button type="submit">Submit & Reserve Seat</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 StackSprint Bootcamp • Crafted with ❤️ at <a href="https://stacksprint.dev">stacksprint.dev</a></p>
+  </footer>
+</body>
+</html>
