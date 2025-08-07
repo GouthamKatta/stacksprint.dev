@@ -102,35 +102,14 @@
     <!-- Registration Form with ID -->
     <section id="register" class="register">
       <h2>Reserve Your Seat</h2>
-      <form
-         name="stacksprint"
-         method="POST"
-         action="/"
-         data-netlify="true"
-         data-netlify-honeypot="bot-field"
-      + >
-        <input type="hidden" name="form-name" value="stacksprint" />
-        <p style="display:none;"><label>“Don’t fill this out if you’re human”: <input name="bot-field" /></label></p>
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="email" name="email" placeholder="Email Address" required />
-        <input type="tel" name="phone" placeholder="Phone Number" required />
-        <select name="interest" required>
-          <option value="" disabled selected>Select your focus area</option>
-          <option value="fullstack">Fullstack Development</option>
-          <option value="frontend">Frontend Development</option>
-          <option value="backend">Backend Development</option>
-          <option value="devops">DevOps & CI/CD</option>
-          <option value="datascience">Data Science & Analytics</option>
-          <option value="machine-learning">Machine Learning & AI</option>
-          <option value="cloud">Cloud Engineering</option>
-          <option value="product-management">Product Management</option>
-          <option value="ux-ui">UX / UI Design</option>
-          <option value="qa">Quality Engineering & Testing</option>
-          <option value="custom">Custom Learning Plan</option>
-        </select>
-        <textarea name="comments" rows="3" placeholder="Tell us about your goals or questions..."></textarea>
-        <button type="submit">Submit & Reserve Seat</button>
-      </form>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf99SWR-2uQOuBidXesLq31p4l6xWhEDuklN48gscBbKxKCYQ/viewform?embedded=true"
+       width="100%"
+       height="900"
+        frameborder="0"
+        marginheight="0"
+       marginwidth="0"
+      >Loading…</iframe>
     </section>
   </main>
 
